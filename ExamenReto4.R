@@ -21,3 +21,8 @@ length(unique(df$country))
 length(unique(df$director))
 
 
+#NA-s
+miss_var_summary(df)
+vis_miss(df,cluster=T)
+
+df[is.na(df)] <- 0
